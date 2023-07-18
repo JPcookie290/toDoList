@@ -1,0 +1,24 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPcookie290/toDoList.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JPcookie290/toDoList/issues"
+  },
+  "homepage": "https://github.com/JPcookie290/toDoList#readme",
+  "devDependencies": {
+    "dev-server": "^0.2.0"
+  }
+}
