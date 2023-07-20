@@ -10,10 +10,15 @@ export default function Model() {
         localStorage.setItem("todos", JSON.stringify(todos));
     }
 
+    const createId = (text) => {
+        let id = text.charAt(0).toUpperCase() + String(Math.floor(Math.random()* 100000));
+        return id;
+    };
+
     const addTodo = (text) => {
         if (text != "") {
             const todo = {
-                id: Math.floor(Math.random()* 100000), // _todos.length + 1,
+                id: createId(text), // _todos.length + 1,
                 text,
                 completed: false,
             };

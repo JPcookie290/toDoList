@@ -35,7 +35,7 @@ export default function View() {
         const todoList = getElement(".todo-list");
         todoList.addEventListener("click", (event) => {
             if(event.target.className === 'delete') {
-                let id = parseInt(event.target.parentElement.id);
+                let id = event.target.parentElement.id;
                 console.log(id);
                 handler(id);
             };
@@ -47,7 +47,7 @@ export default function View() {
         const todoList = getElement(".todo-list");
         todoList.addEventListener("change", (event) => {
             if(event.target.type === "checkbox") {
-                let id = parseInt(event.target.parentElement.id);
+                let id = event.target.parentElement.id;
                 console.log(id);
                 handler(id);
             };
@@ -58,7 +58,7 @@ export default function View() {
     const bindEditTodo = (handler) => {
         const todoList = getElement(".todo-list");
         todoList.addEventListener("focusout", (event) => {
-            let id = parseInt(event.target.parentElement.id);
+            let id = event.target.parentElement.id;
             handler(id, _tempTodoText);
         });
     };
